@@ -1,0 +1,28 @@
+@import url(./Css/responsive.css);
+
+@font-face {
+    font-family: secondFont;
+    src: url(../Font/Elianto-Regular.otf);
+}
+
+* {
+    font-family: secondFont;
+}
+
+:root {
+    --btnBg: #3CB018;
+    --textWhite: #FFF;
+    --TextBlack: #000;
+    --BtnRadius: 8px;
+}
+
+.logo {
+    font-size: 30px;
+}
+
+.headerBtn>button {
+    background-color: var(--btnBg);
+    color: var(--textWhite);
+    border: none;
+    border-radius: var(--BtnRadius);
+}
