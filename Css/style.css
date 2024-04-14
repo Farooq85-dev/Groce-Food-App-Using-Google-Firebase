@@ -93,9 +93,3 @@
 #slideDescription {
     font-weight: var(--fontweight);
 }
-
-.slideImgCol {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
