@@ -6,13 +6,16 @@
 }
 
 :root {
+    --navBarBgColor: #fff;
+    --TextBlack: #000;
+    --textWhite: #FFF;
     --btnBg: #3CB018;
     --btnBgHover: #2b7d11;
-    --textWhite: #FFF;
-    --TextBlack: #000;
     --BtnRadius: 8px;
-    --navBarBgColor: #fff;
     --BtnPadding: 5px 15px;
+    --fontweight: bold;
+    --orderInstructionsBg: #F0693E;
+
 }
 
 * {
@@ -42,7 +45,7 @@
 }
 
 .navUl li a {
-    font-weight: bold;
+    font-weight: var(--fontweight);
 }
 
 .headerBtn>button {
@@ -51,10 +54,48 @@
     border: none;
     border-radius: var(--BtnRadius);
     padding: var(--BtnPadding);
+
 }
 
 .headerBtn>button:hover {
     background-color: var(--btnBgHover);
     color: var(--textWhite);
     transition: 1s ease background-color;
+}
+
+/* Slide */
+.slideHeading {
+    font-family: secondFont;
+}
+
+#orderInstructionsBtn,
+#getSaleBtn {
+    background-color: var(--orderInstructionsBg);
+    padding: var(--BtnPadding);
+    border: none;
+    color: var(--textWhite);
+    border: 2px solid var(--orderInstructionsBg);
+    border-radius: var(--BtnRadius);
+}
+
+#getSaleBtn {
+    background-color: var(--textWhite);
+    border: 2px solid var(--TextBlack);
+    font-weight: var(--fontweight);
+    color: var(--TextBlack);
+}
+
+.slideBtn {
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+#slideDescription {
+    font-weight: var(--fontweight);
+}
+
+.slideImgCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

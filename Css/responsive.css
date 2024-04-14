@@ -5,8 +5,21 @@
          justify-content: center;
          align-items: center;
      }
+
      .headerBtn {
          justify-content: center;
          align-items: center;
+     }
+ }
+
+ @media only screen and (max-width: 540px) {
+
+     .slideReview,
+     .slideBtn {
+         flex-direction: column-reverse;
+     }
+
+     .slideBtn {
+         margin-bottom: 20px !important;
      }
  }
