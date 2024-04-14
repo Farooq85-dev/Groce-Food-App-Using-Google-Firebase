@@ -1,23 +1,48 @@
-@import url(./Css/responsive.css);
+@import url(./responsive.css);
 
 @font-face {
     font-family: secondFont;
     src: url(../Font/Elianto-Regular.otf);
 }
 
-* {
-    font-family: secondFont;
-}
-
 :root {
     --btnBg: #3CB018;
+    --btnBgHover: #2b7d11;
     --textWhite: #FFF;
     --TextBlack: #000;
     --BtnRadius: 8px;
+    --navBarBgColor: #fff;
+    --BtnPadding: 5px 15px;
+}
+
+* {
+    font-family: Raleway;
+}
+
+.navbar {
+    background-color: var(--navBarBgColor) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%233CB018' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+    color: var(--textWhite) !important;
+    border: none !important;
 }
 
 .logo {
     font-size: 30px;
+    font-family: secondFont;
+}
+
+.fa-solid {
+    font-size: 30px;
+}
+
+.navUl li a {
+    font-weight: bold;
 }
 
 .headerBtn>button {
@@ -25,4 +50,11 @@
     color: var(--textWhite);
     border: none;
     border-radius: var(--BtnRadius);
+    padding: var(--BtnPadding);
+}
+
+.headerBtn>button:hover {
+    background-color: var(--btnBgHover);
+    color: var(--textWhite);
+    transition: 1s ease background-color;
 }

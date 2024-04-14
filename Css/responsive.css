@@ -1,0 +1,12 @@
+ @media only screen and (max-width: 992px) {
+     .navUl li a {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .headerBtn {
+         justify-content: center;
+         align-items: center;
+     }
+ }
