@@ -10,6 +10,30 @@
          justify-content: center;
          align-items: center;
      }
+
+     .slideImgCol,
+     .slideTextCol,
+     .exImgCol,
+     .exTextCol {
+         justify-content: center;
+     }
+
+     .exImg {
+         margin-bottom: 20px;
+     }
+
+     .category1,
+     .category2 {
+         margin-bottom: 20px;
+     }
+ }
+
+ @media only screen and (max-width: 768px) {
+
+     .category3,
+     .category4 {
+         margin-bottom: 20px;
+     }
  }
 
  @media only screen and (max-width: 540px) {
@@ -23,3 +47,5 @@
          margin-bottom: 20px !important;
      }
  }
+
+ 

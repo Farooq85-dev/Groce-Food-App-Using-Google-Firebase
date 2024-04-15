@@ -15,7 +15,6 @@
     --BtnPadding: 5px 15px;
     --fontweight: bold;
     --orderInstructionsBg: #F0693E;
-
 }
 
 * {
@@ -68,6 +67,11 @@
     font-family: secondFont;
 }
 
+.slideBg,
+.slideChartBg {
+    padding-bottom: 40px;
+}
+
 #orderInstructionsBtn,
 #getSaleBtn {
     background-color: var(--orderInstructionsBg);
@@ -92,4 +96,57 @@
 
 #slideDescription {
     font-weight: var(--fontweight);
+}
+
+/* Experience */
+.exBg {
+    padding-bottom: 40px;
+}
+
+.exHeading {
+    color: var(--btnBg);
+    font-family: secondFont;
+}
+
+.exText h2 {
+    margin: 0px !important;
+    font-weight: var(--fontweight);
+}
+
+.exText>p.quote {
+    font-weight: bold;
+}
+
+/* Categories */
+.categoriesBg {
+    padding-bottom: 40px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+    border-radius: var(--BtnRadius);
+    border: none;
+}
+
+.categoryBtn,
+.seeMoreCategoryBtn {
+    background-color: var(--textWhite);
+    border: 2px solid var(--TextBlack);
+    padding: var(--BtnPadding);
+    border-radius: var(--BtnRadius);
+    font-weight: var(--fontweight);
+}
+
+.seeMoreCategoryBtn {
+    background-color: var(--btnBg);
+    border: 2px solid var(--textWhite);
+    color: var(--textWhite);
+}
+
+.categoriesHeading {
+    font-family: secondFont;
+}
+
+.seemoreBg {
+    background-color: var(--btnBg);
 }
