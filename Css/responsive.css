@@ -14,7 +14,8 @@
      .slideImgCol,
      .slideTextCol,
      .exImgCol,
-     .exTextCol {
+     .exTextCol,
+     .contactImgCol {
          justify-content: center;
      }
 
@@ -23,16 +24,41 @@
      }
 
      .category1,
-     .category2 {
+     .category2,
+     .blogPost1,
+     .blogPost2 {
          margin-bottom: 20px;
+     }
+
+     .hireBx3,
+     .hireBx4 {
+         margin-bottom: 20px;
+     }
+
+     .installAppDiv {
+         margin-bottom: 20px;
+     }
+
+     .footercnt {
+         flex-direction: column;
+         align-items: center;
+         gap: 20px;
+         justify-content: center !important;
      }
  }
 
  @media only screen and (max-width: 768px) {
 
      .category3,
-     .category4 {
+     .category4,
+     .blogPost3,
+     .blogPost4 {
          margin-bottom: 20px;
+     }
+
+     .hireBxRow {
+         margin-left: 0px !important;
+         margin-right: 0px !important;
      }
  }
 
@@ -47,5 +73,3 @@
          margin-bottom: 20px !important;
      }
  }
-
- 

@@ -15,6 +15,7 @@
     --BtnPadding: 5px 15px;
     --fontweight: bold;
     --orderInstructionsBg: #F0693E;
+    --cardsBxShadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
 }
 
 * {
@@ -73,6 +74,7 @@
 }
 
 #orderInstructionsBtn,
+.sendEmailBtn,
 #getSaleBtn {
     background-color: var(--orderInstructionsBg);
     padding: var(--BtnPadding);
@@ -123,13 +125,14 @@
 }
 
 .card {
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
+    box-shadow: var(--cardsBxShadow);
     border-radius: var(--BtnRadius);
     border: none;
 }
 
 .categoryBtn,
-.seeMoreCategoryBtn {
+.seeMoreCategoryBtn,
+.whatsppModalBtn {
     background-color: var(--textWhite);
     border: 2px solid var(--TextBlack);
     padding: var(--BtnPadding);
@@ -149,4 +152,157 @@
 
 .seemoreBg {
     background-color: var(--btnBg);
+}
+
+/* Hire */
+
+.hireBg {
+    padding-bottom: 40px;
+}
+
+.hireHeading {
+    font-family: secondFont;
+    color: var(--btnBg);
+}
+
+.hireText {
+    font-weight: var(--fontweight);
+}
+
+.hireUl ul {
+    list-style-type: square;
+}
+
+.hireUl ul li {
+    margin-bottom: 20px;
+}
+
+.hireBx1,
+.hireBx2,
+.hireBx3,
+.hireBx4 {
+    box-shadow: var(--cardsBxShadow);
+    border-radius: var(--BtnRadius);
+}
+
+.hireBx1,
+.hireBx2 {
+    margin-bottom: 20px;
+}
+
+.hireBx1,
+.hireBx3 {
+    margin-right: 20px;
+}
+
+#installAppBtn {
+    background-color: var(--btnBg);
+    color: var(--textWhite);
+    border: none;
+    border-radius: var(--BtnRadius);
+    padding: var(--BtnPadding);
+
+}
+
+#installAppBtn:hover {
+    background-color: var(--btnBgHover);
+    color: var(--textWhite);
+    transition: 1s ease background-color;
+}
+
+/* Blog Post */
+.blogPostHeading {
+    font-family: secondFont;
+}
+
+.card h6 {
+    font-weight: bold;
+}
+
+.blogPostBg {
+    padding-bottom: 40px;
+}
+
+/* Contact */
+.contactBg {
+    padding-bottom: 40px;
+}
+
+.emailSend {
+    border: 2px solid var(--textWhite);
+    background-color: #e9e9e9;
+    padding: 10px;
+    border-radius: var(--BtnRadius);
+    width: 80%;
+}
+
+.sendEmailBtn {
+    margin-top: 10px;
+}
+
+.contactHeading {
+    font-family: secondFont;
+}
+
+/* FooterBg */
+.footerBg {
+    padding: 20px;
+
+}
+
+.footerBg {
+    background-color: var(--orderInstructionsBg);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#footerLogo {
+    font-family: secondFont;
+    font-size: 30px;
+    color: var(--textWhite);
+}
+
+.authorHeading {
+    color: #FFF;
+    font-family: secondFont;
+}
+
+.whatsappInput {
+    background-color: #e9e9e9;
+    color: var(--TextBlack);
+    border-radius: var(--BtnRadius);
+    border: none !important;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+#staticBackdropLabel {
+    font-family: secondFont;
+}
+
+/* Scroll to top */
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--orderInstructionsBg);
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+#scroll-to-top-btn:hover {
+    background-color: var(--orderInstructionsBg);
+}
+
+#scroll-to-top-btn i {
+    transform: translateY(2px);
 }
