@@ -122,7 +122,8 @@
                         <img src="../images/eye-off.svg" alt="Loading..." class="position-absolute eye-off3"
                             id="showPassword3" style="cursor: pointer;">
                     </div>
-                    <span class="rstPassword" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot
+                    <span style="color: red; cursor: pointer;" class="rstPassword" data-bs-toggle="modal"
+                        data-bs-target="#forgotPasswordModal">Forgot
                         Password?</span>
                     <button id="signInYourSelfBtn">Sign In</button>
                 </form>
@@ -144,6 +145,7 @@
         </div>
     </div>
     <!-- End Login/SignUp form -->
+    
     <!-- Modal For Forgot Password -->
     <div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -162,7 +164,8 @@
                             <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
                             <path d="M12 8v4" />
                             <path d="M12 16h.01" />
-                        </svg> Please fill the input field in correct way. We will send you password reset email.</p>
+                        </svg> Please give the correct email. Then, we will send you reset password email.
+                    </p>
                     <input type="email" placeholder="Enter your correct email" id="resetEmail" />
                     <button id="resetBtn">Send</button>
                 </div>

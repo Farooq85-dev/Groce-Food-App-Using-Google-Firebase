@@ -4,7 +4,6 @@
     font-family: Raleway !important;
 }
 
-
 :root {
     --navBarBgColor: #fff;
     --TextBlack: #000;
@@ -17,6 +16,10 @@
     --orderInstructionsBg: #F0693E;
     --cardsBxShadow: rgba(0, 0, 0, 0.1) 0px 4px 12px !important;
     --overlayColor: #653743;
+    --inputRadius: 15px;
+    --inputBg: #eee;
+    ---inputPadding: 12px 15px;
+    --formBg: #c8c8c8;
 }
 
 /* SignUp Css */
@@ -42,13 +45,8 @@ button {
     border-radius: var(--BtnRadius);
     border: 2px solid var(--orderInstructionsBg);
     background-color: var(--orderInstructionsBg);
-    color: white;
-    font-family: f2;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 10px 20px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    color: var(--textWhite);
+    padding: var(--BtnPadding);
     transition: transform 80ms ease-in;
     cursor: pointer;
 }
@@ -59,7 +57,7 @@ button.ghost {
 }
 
 form {
-    background-color: #c8c8c8;
+    background-color: var(--formBg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,20 +68,19 @@ form {
 }
 
 input {
-    background-color: #eee;
+    background-color: var(--inputBg);
     outline: none;
-    border-radius: 15px;
+    border-radius: var(--inputRadius);
     border: none;
-    padding: 12px 15px;
-    margin: 8px 0;
-    font-weight: bold;
+    padding: var(---inputPadding);
+    margin: 8px 0px;
+    font-weight: var(--fontweight);
     width: 100%;
 }
 
 .container {
     background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 2px 4px 12px rgba(0, 0, 0, .08);
+    border-radius: 15px;
     position: relative;
     overflow: hidden;
     width: 768px;
@@ -157,7 +154,7 @@ input {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
-    color: #FFFFFF;
+    color: var(--textWhite);
     position: relative;
     left: -100%;
     height: 100%;
@@ -215,7 +212,7 @@ input {
     margin: 0 5px;
     height: 40px;
     width: 40px;
-    color: black !important;
+    color: var(--TextBlack) !important;
 }
 
 .passwordContainer,

@@ -96,7 +96,8 @@
                             <br>Tasty and 100%
                             healthy.</span>
                         <div class="slideBtn d-flex align-items-center gap-2">
-                            <button id="orderInstructionsBtn">How to Order</button>
+                            <button id="orderInstructionsBtn" data-bs-toggle="modal" data-bs-target="#howToModal">How to
+                                Order</button>
                             <button id="getSaleBtn">Get Sale</button>
                         </div>
                         <div class="slideReview d-flex align-items-center gap-2">
@@ -197,11 +198,18 @@
                     <div class="card p-2 text-center seemoreBg">
                         <img src="./images/seemore-img.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Others</h5>
-                            <p class="card-text">Milk, Tools, Spice,Pizza
+                            <h5 class="card-title seeMoreTitle">Others</h5>
+                            <p class="card-text seeMoreText">Milk, Tools, Spice,Pizza
                                 Spaghetti, Salad etc.</p>
-                            <button href="#" class="seeMoreCategoryBtn">See More <img
-                                    src="./images/arrow-narrow-right.svg" alt="Loading..."></button>
+                            <button href="#" class="seeMoreCategoryBtn">See More <svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M5 12l14 0" />
+                                    <path d="M13 18l6 -6" />
+                                    <path d="M13 6l6 6" />
+                                </svg></button>
                         </div>
                     </div>
                 </div>
@@ -223,7 +231,7 @@
                     <div class="hireUl">
                         <ul>
                             <li>Best service and fast response</li>
-                            <li>Userfriendly app</li>
+                            <li>User friendly app</li>
                             <li>Profesional staff</li>
                         </ul>
                     </div>
@@ -289,7 +297,7 @@
                     <div class="card p-2 text-center">
                         <img src="./images/blog3-img.avif" class="card-img-top" alt="Loading...">
                         <div class="card-body">
-                            <h5 class="card-title">Lifestyle</h5>
+                            <h5 class="card-title">Fruits</h5>
                             <p id="para3" class="card-text">I tend to get a lot of questions this time of year about how
                                 to prevent and deal with stress, and between holiday part...</p>
                             <button href="#" class="categoryBtn" id="para3Btn">See More</button>
@@ -300,11 +308,58 @@
                     <div class="card p-2 text-center">
                         <img src="./images/blog4-img.avif" class="card-img-top" alt="Loading...">
                         <div class="card-body">
-                            <h5 class="card-title">Nutrition</h5>
+                            <h5 class="card-title">Strawberry</h5>
                             <p id="para4">My health goals included improved digestion, energy, stress management,
                                 immunity, sleep,
                                 and aiding exercise performance...</p>
                             <button href="#" class="categoryBtn" id="para4Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost5">
+                    <div class="card p-2 text-center">
+                        <img src="./images/anna-pelzer-IGfIGP5ONV0-unsplash.jpg" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Vagetables</h5>
+                            <p id="para5">Vegetables are packed with essential nutrients, vitamins, and minerals crucial
+                                for maintaining a healthy diet...</p>
+                            <button href="#" class="categoryBtn" id="para5Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost6">
+                    <div class="card p-2 text-center">
+                        <img src="./images/davide-cantelli-jpkfc5_d-DI-unsplash.jpg" class="card-img-top"
+                            alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fast Food</h5>
+                            <p id="para6" class="card-text">Fast food is known for its convenience and quick service,
+                                making it a popular choice for busy individuals...</p>
+                            <button href="#" class="categoryBtn" id="para6Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost7">
+                    <div class="card p-2 text-center">
+                        <img src="./images/jimmy-dean-Yn0l7uwBrpw-unsplash.jpg" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mixtures</h5>
+                            <p id="para7" class="card-text">Mixtures Food combines various ingredients and cooking
+                                styles, creating unique and flavorful dishes...</p>
+                            <button href="#" class="categoryBtn" id="para7Btn">See More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 blogPost8">
+                    <div class="card p-2 text-center">
+                        <img src="./images/brooke-lark-M4E7X3z80PQ-unsplash.jpg" class="card-img-top" alt="Loading...">
+                        <div class="card-body">
+                            <h5 class="card-title">Fast & Green Food</h5>
+                            <p id="para8">Fast & Green Food offers a quick, healthy alternative to traditional fast food
+                                by incorporating fresh, plant-based ingredients...</p>
+                            <button href="#" class="categoryBtn" id="para8Btn">See More</button>
                         </div>
                     </div>
                 </div>
@@ -347,15 +402,16 @@
                 </div>
                 <div class="socialMediaIcons">
                     <a href="https://github.com/Farooq85-dev"><img src="./images/brand-github.png" alt="Github..."
-                            width="50px"></a>
+                            width="30px"></a>
                     <a href="https://www.linkedin.com/in/muhammad-farooq-b71886295/"><img
-                            src="./images/brand-linkedin.png" alt="Linkedin..." width="50px"></a>
+                            src="./images/brand-linkedin.png" alt="Linkedin..." width="30px"></a>
                     <a data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="cursor: pointer;"
-                        id="whatsapp"><img src="./images/brand-whatsapp.png" alt="Whatsapp..." width="50px"></a>
+                        id="whatsapp"><img src="./images/brand-whatsapp.png" alt="Whatsapp..." width="30px"></a>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Scroll to Top -->
     <a href="#" id="scroll-to-top-btn" title="Scroll to Top">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -372,7 +428,7 @@
     <!-- Modal  Whatsapp-->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="staticBackdropLabel">Whatsapp Number</h1>
@@ -383,6 +439,86 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="whatsppModalBtn" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- How to order Modal -->
+    <div class="modal fade" id="howToModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">How to Order Using the Groce Foods App</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3> Step 1: Download and Install the App</h3>
+                    <p> For iOS Users: Open the App Store, search for "Groce Foods", and tap "Download".
+                        For Android Users: Open the Google Play Store, search for "Groce Foods", and tap "Install".</p>
+                    <h3> Step 2: Sign Up or Log In</h3>
+                    <p>New Users: Tap on "Sign Up" to create a new account. Enter your email, create a password, and
+                        fill
+                        in any other required information.
+                        Existing Users: Tap on "Log In" and enter your email and password.</p>
+                    <h3>Step 3: Browse Products</h3>
+                    <p> Categories: Navigate through the categories (e.g., Fruits, Vegetables, Dairy, etc.) to find the
+                        products you need.
+                        Search: Use the search bar at the top of the screen to quickly find specific items.
+                        Filters: Apply filters to sort products by price, popularity, or dietary preferences.</p>
+                    <h3>Step 4: Add Items to Your Cart</h3>
+                    <p>Select Item: Tap on a product to view its details.
+                        Adjust Quantity: Use the + and - buttons to adjust the quantity.
+                        Add to Cart: Tap the "Add to Cart" button to add the item to your shopping cart.</p>
+                    <h3> Step 5: Review Your Cart</h3>
+                    <p>View Cart: Tap on the cart icon at the top right corner of the screen.
+                        Edit Items: Adjust quantities or remove items from your cart as needed.
+                        Apply Coupons: Enter any discount codes or coupons you have.
+                    </p>
+                    <h3>Step 6: Proceed to Checkout
+                    </h3>
+                    <p>Checkout: Tap the "Checkout" button.
+                        Delivery Details: Enter your delivery address or select from saved addresses.
+                        Delivery Time: Choose a preferred delivery time slot.
+                        Payment Method: Select your payment method (Credit/Debit Card, PayPal, etc.).
+                    </p>
+                    <h3>
+                        Step 7: Confirm and Place Your Order
+                    </h3>
+                    <p>
+                        Review Order: Double-check your order details, delivery address, and payment method.
+                        Place Order: Tap the "Place Order" button to finalize your purchase.
+                        Confirmation: You will receive an order confirmation screen and an email with your order
+                        details.
+                    </p>
+                    <h3>
+                        Step 8: Track Your Order
+                    </h3>
+                    <p> Order Status: Go to the "My Orders" section in the app to view the status of your current and
+                    </p>
+                    orders.
+                    Live Tracking: For real-time updates, tap on your current order to see the delivery progress.
+                    past
+                    <h3>
+                        Step 9: Receive Your Delivery
+                    </h3>
+                    <p>
+                        Delivery Notification: You will receive a notification when your order is out for delivery.
+                        Receive Order: Accept your order from the delivery person and verify the items.
+                    </p>
+                    <h3>
+                        Step 10: Provide Feedback
+                    </h3>
+                    <p>
+                        Rate Your Experience: After receiving your order, you will be prompted to rate your experience
+                        and
+                        provide feedback.
+                        Customer Support: If you encounter any issues, contact our customer support through the app for
+                        assistance.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="howToModalBtn" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

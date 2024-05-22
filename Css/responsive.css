@@ -26,7 +26,9 @@
      .category1,
      .category2,
      .blogPost1,
-     .blogPost2 {
+     .blogPost2,
+     .blogPost5,
+     .blogPost6 {
          margin-bottom: 20px;
      }
 
@@ -52,7 +54,9 @@
      .category3,
      .category4,
      .blogPost3,
-     .blogPost4 {
+     .blogPost4,
+     .blogPost7,
+     .blogPost8 {
          margin-bottom: 20px;
      }
 

@@ -75,6 +75,77 @@ const showPara4 = () => {
 }
 para4Btn.addEventListener("click", showPara4);
 
+const para5Btn = document.getElementById("para5Btn");
+const showPara5 = () => {
+    let para5 = document.getElementById("para5");
+    let shortPara = `Vegetables are packed with essential nutrients, vitamins, and minerals crucial
+    for maintaining a healthy diet...`;
+    let fullPara = `Vegetables are packed with essential nutrients, vitamins, and minerals crucial
+    for maintaining a healthy diet. They offer a variety of flavors, colors, and textures,
+    making meals both nutritious and enjoyable. Consuming a diverse range of vegetables
+    daily helps boost the immune system, improve digestion, and reduce the risk of chronic
+    diseases, contributing to overall well-being.`;
+    if (para5Btn.innerHTML === "See More") {
+        para5.innerHTML = fullPara;
+        para5Btn.innerHTML = "See Less";
+    } else {
+        para5.innerHTML = shortPara;
+        para5Btn.innerHTML = "See More";
+    }
+
+}
+para5Btn.addEventListener("click", showPara5);
+
+const para6Btn = document.getElementById("para6Btn");
+const showPara6 = () => {
+    let para6 = document.getElementById("para6");
+    let shortPara = `Fast food is known for its convenience and quick service, making it a popular choice for busy individuals...`;
+    let fullPara = `Fast food is known for its convenience and quick service, making it a popular choice for busy individuals. It typically includes items like burgers, fries, pizza, and fried chicken. While often criticized for being high in calories and low in nutritional value, many fast food chains are introducing healthier options to meet the growing demand for nutritious, on-the-go meals.
+
+    `;
+    if (para6Btn.innerHTML === "See More") {
+        para6.innerHTML = fullPara;
+        para6Btn.innerHTML = "See Less";
+    } else {
+        para6.innerHTML = shortPara;
+        para6Btn.innerHTML = "See More";
+    }
+
+}
+para6Btn.addEventListener("click", showPara6);
+
+const para7Btn = document.getElementById("para7Btn");
+const showPara7 = () => {
+    let para7 = document.getElementById("para7");
+    let shortPara = `Mixtures Food combines various ingredients and cooking styles, creating unique and flavorful dishes...`;
+    let fullPara = `Mixtures Food combines various ingredients and cooking styles, creating unique and flavorful dishes. This approach allows for culinary creativity, blending different cuisines to cater to diverse tastes. Whether it's a fusion of traditional recipes or an innovative new dish, mixtures food provides an exciting dining experience that can appeal to a wide range of palates.`;
+    if (para7Btn.innerHTML === "See More") {
+        para7.innerHTML = fullPara;
+        para7Btn.innerHTML = "See Less";
+    } else {
+        para7.innerHTML = shortPara;
+        para7Btn.innerHTML = "See More";
+    }
+
+}
+para7Btn.addEventListener("click", showPara7);
+
+const para8Btn = document.getElementById("para8Btn");
+const showPara8 = () => {
+    let para8 = document.getElementById("para8");
+    let shortPara = `Fast & Green Food offers a quick, healthy alternative to traditional fast food by incorporating fresh, plant-based ingredients...`;
+    let fullPara = `Fast & Green Food offers a quick, healthy alternative to traditional fast food by incorporating fresh, plant-based ingredients. This concept focuses on providing nutritious meals like salads, grain bowls, and veggie wraps, which are both satisfying and environmentally friendly. Fast & Green Food caters to health-conscious consumers seeking convenience without sacrificing nutritional value.`;
+    if (para8Btn.innerHTML === "See More") {
+        para8.innerHTML = fullPara;
+        para8Btn.innerHTML = "See Less";
+    } else {
+        para8.innerHTML = shortPara;
+        para8Btn.innerHTML = "See More";
+    }
+
+}
+para8Btn.addEventListener("click", showPara8);
+
 
 
 const whatsappNo = () => {
