@@ -47,8 +47,8 @@ onAuthStateChanged(auth, async (user) => {
         console.log("User login hy--->", user);
         await picUpdate(uid);
     } else {
-        if (location.pathname === '/Groce-Food-App-Using-Google-Firebase/htmlPages/profile.html') {
-            location.pathname = '/Groce-Food-App-Using-Google-Firebase/htmlPages/signup.html';
+        if (location.pathname === "/htmlPages/profile.html") {
+            location.pathname = "/htmlPages/signup.html";
         }
     }
 });
