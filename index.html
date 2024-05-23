@@ -24,7 +24,7 @@
 
 <body>
     <!-- BootStrap Navbar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-xl bg-body-tertiary">
         <div class="container">
             <a class="navbar-brand logo" href="./index.html"><img src="./images/logo.png" alt="logo..."
                     width="40px">Groce</a>
@@ -55,32 +55,22 @@
                     </li>
                 </ul>
                 <form class="d-flex headerBtn" role="search">
-                    <div class="d-flex justify-content-center align-items-center gap-3  me-3">
-                        <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    <a href="./htmlPages/cart.html" class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="30"
+                            height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart">
+                            class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart-check">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                            <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
-                            <path d="M17 17h-11v-14h-2" />
+                            <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                            <path d="M11.5 17h-5.5v-14h-2" />
                             <path d="M6 5l14 1l-1 7h-13" />
-                        </svg>
-                        <svg style="cursor: pointer;" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round"
-                            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-shopee">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                            <path d="M4 7l.867 12.143a2 2 0 0 0 2 1.857h10.276a2 2 0 0 0 2 -1.857l.867 -12.143h-16z" />
-                            <path d="M8.5 7c0 -1.653 1.5 -4 3.5 -4s3.5 2.347 3.5 4" />
-                            <path
-                                d="M9.5 17c.413 .462 1 1 2.5 1s2.5 -.897 2.5 -2s-1 -1.5 -2.5 -2s-2 -1.47 -2 -2c0 -1.104 1 -2 2 -2s1.5 0 2.5 1" />
-                        </svg>
-                    </div>
-                    <button class="btn btn-outline-success" type="submit"><a
-                            href="./htmlPages/signup.html">Signup</a></button>
+                            <path d="M15 19l2 2l4 -4" />
+                        </svg></a>
+                    <button class="btn me-2 storeBtn"><a href="./htmlPages/store.html">Visit Store</a></button>
+                    <button class="btn me-2 signupBtn"><a href="./htmlPages/signup.html">Signup</a></button>
+                    <button class="btn "><a href="./htmlPages/profile.html">Dashboard</a></button>
                 </form>
             </div>
+        </div>
         </div>
     </nav>
 

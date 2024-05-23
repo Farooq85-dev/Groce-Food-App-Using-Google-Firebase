@@ -149,7 +149,7 @@ para8Btn.addEventListener("click", showPara8);
 
 
 const whatsappNo = () => {
-    const number = `+923288302289`;
+    const number = `+92-328-830-2289`;
     const whastsappNo = document.getElementById("whastsappNo");
     whastsappNo.value = number;
 }

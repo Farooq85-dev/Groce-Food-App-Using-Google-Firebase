@@ -4,12 +4,13 @@
     font-family: Raleway !important;
 }
 
+
 :root {
     --navBarBgColor: #fff;
     --TextBlack: #000;
     --textWhite: #FFF;
-    --btnBg: #3CB018;
-    --btnBgHover: #2b7d11;
+    --btnBg: #653743;
+    --btnBgHover: #3f222a;
     --BtnRadius: 8px;
     --BtnPadding: 5px 15px;
     --fontweight: bold;
@@ -21,6 +22,7 @@
     ---inputPadding: 12px 15px;
     --formBg: #c8c8c8;
 }
+
 
 /* SignUp Css */
 .form {

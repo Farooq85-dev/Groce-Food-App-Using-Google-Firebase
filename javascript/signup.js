@@ -3,6 +3,7 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     sendPasswordResetEmail,
+    onAuthStateChanged
 } from "../firebase.js";
 
 //Initialize Toastr;
@@ -23,6 +24,17 @@ toastr.options = {
     "showMethod": "fadeIn",
     "hideMethod": "fadeOut"
 }
+
+//To check the user Status
+onAuthStateChanged(auth, async (user) => {
+    if (user) {
+        console.log(user)
+    } else {
+        if (location.pathname === "../htmlPages/profile.html") {
+            location.pathname = "../htmlPages/signup.html";
+        }
+    }
+});
 
 //SignUp Form
 const registerYourSelf = async () => {
@@ -48,11 +60,17 @@ const registerYourSelf = async () => {
     } else if (passwordSignUp.value !== confirmPasswordSignUp.value) {
         toastr.error("Please match password.");
     } else {
+
         await createUserWithEmailAndPassword(auth, emailSignUp.value, passwordSignUp.value)
             .then((userCredential) => {
                 const user = userCredential.user;
                 toastr.success(`You have been registered successfully.`);
                 const signIn = document.getElementById("signIn");
+                var userData = {
+                    name: nameSignUp.value,
+                    password: passwordSignUp.value,
+                }
+                localStorage.setItem("userData", JSON.stringify(userData));
                 signIn.click();
             })
             .catch((error) => {
@@ -73,12 +91,6 @@ const registerYourSelf = async () => {
 const registerYourSelfBtn = document.getElementById("registerYourSelfBtn");
 registerYourSelfBtn.addEventListener("click", registerYourSelf);
 
-// function logOut() {
-
-// }
-// const logOutBtn = document.getElementById("logOutBtn");
-// logOutBtn.addEventListener("click", logOut);
-
 //SignIn   
 const signInYourSelf = async () => {
     event.preventDefault();
@@ -96,15 +108,14 @@ const signInYourSelf = async () => {
                 setTimeout(() => {
                     window.location = "../htmlPages/profile.html";
                 }, 4000)
+                document.getElementById("emailSignIn").value = "";
+                document.getElementById("passwordSignIn").value = "";
             })
             .catch((error) => {
                 const errorCode = error.code;
                 const errorMessage = error.message;
                 toastr.error('Invalid Email or Passowrd.');
             });
-        document.getElementById("emailSignIn").value = "";
-        document.getElementById("passwordSignIn").value = "";
-
     }
 };
 const signInYourSelfBtn = document.getElementById("signInYourSelfBtn");

@@ -49,6 +49,29 @@
      }
  }
 
+ @media only screen and (max-width: 1200px) {
+     .navUl li a {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+
+     }
+
+     .headerBtn {
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+     }
+
+     .signupBtn {
+         margin-bottom: 10px;
+     }
+     .storeBtn{
+        margin: 10px 0px;
+     }
+ }
+
  @media only screen and (max-width: 768px) {
 
      .category3,
@@ -83,5 +106,35 @@
          align-items: center;
          flex-direction: column;
          gap: 10px;
+     }
+
+     .social-container {
+         margin: 0px !important;
+     }
+
+     #fileSelectBtn {
+         margin-bottom: 10px;
+     }
+
+     #cancelUploadBtn {
+         margin-top: 0px !important;
+     }
+ }
+
+ @media only screen and (max-width: 400px) {
+
+     #userPhotoUpload {
+         width: 100px !important;
+         height: 100px !important;
+     }
+
+     .mainProfileBg {
+         margin-left: 120px !important;
+     }
+ }
+
+ @media only screen and (max-width: 320px) {
+     #userName {
+         font-size: 15px !important;
      }
  }

@@ -1,4 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
+
 import {
     getAuth,
     createUserWithEmailAndPassword,
@@ -10,6 +11,7 @@ import {
     updateEmail,
     updatePassword,
 } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js";
+
 import {
     getFirestore,
     doc,
@@ -17,6 +19,7 @@ import {
     getDoc,
     onSnapshot,
 } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-firestore.js";
+
 import {
     getStorage,
     ref,
