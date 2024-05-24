@@ -3,7 +3,10 @@ import {
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
     sendPasswordResetEmail,
-    onAuthStateChanged
+    onAuthStateChanged,
+    setDoc,
+    db,
+    doc
 } from "../firebase.js";
 
 //Initialize Toastr;
@@ -28,7 +31,6 @@ toastr.options = {
 //To check the user Status
 onAuthStateChanged(auth, async (user) => {
     if (user) {
-        console.log(user)
     } else {
         if (location.pathname === "../htmlPages/profile.html") {
             location.pathname = "../htmlPages/signup.html";
@@ -45,6 +47,8 @@ const registerYourSelf = async () => {
     var passwordSignUp = document.getElementById("passwordSignUp");
     var confirmPasswordSignUp = document.getElementById("cpasswordSignUp");
     var passwordRegex = /^\d{8}$/;
+    const signIn = document.getElementById("signIn");
+
     if (nameSignUp.value === "") {
         toastr.error("Please Write Name.");
     } else if (emailSignUp.value === "") {
@@ -60,18 +64,11 @@ const registerYourSelf = async () => {
     } else if (passwordSignUp.value !== confirmPasswordSignUp.value) {
         toastr.error("Please match password.");
     } else {
-
         await createUserWithEmailAndPassword(auth, emailSignUp.value, passwordSignUp.value)
             .then((userCredential) => {
                 const user = userCredential.user;
                 toastr.success(`You have been registered successfully.`);
-                const signIn = document.getElementById("signIn");
-                var userData = {
-                    name: nameSignUp.value,
-                    password: passwordSignUp.value,
-                }
-                localStorage.setItem("userData", JSON.stringify(userData));
-                signIn.click();
+
             })
             .catch((error) => {
                 const errorCode = error.code;
@@ -80,6 +77,12 @@ const registerYourSelf = async () => {
                     toastr.info("Email already registered.")
                 }
             });
+        let uid = auth.currentUser.uid;
+        await setDoc(doc(db, `usersData/${uid}`), {
+            name: nameSignUp.value,
+            password: passwordSignUp.value,
+        });
+        signIn.click();
         document.getElementById("nameSignUp").value = "";
         document.getElementById("emailSignUp").value = "";
         document.getElementById("passwordSignUp").value = "";
@@ -107,7 +110,7 @@ const signInYourSelf = async () => {
                 toastr.success(`You have been login succcessfully.`);
                 setTimeout(() => {
                     window.location = "../htmlPages/profile.html";
-                }, 4000)
+                }, 3000)
                 document.getElementById("emailSignIn").value = "";
                 document.getElementById("passwordSignIn").value = "";
             })

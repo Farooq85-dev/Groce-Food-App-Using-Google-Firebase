@@ -1,3 +1,18 @@
+import {
+    onAuthStateChanged,
+    auth,
+} from "./firebase.js"
+
+//To check the user Status
+onAuthStateChanged(auth, async (user) => {
+    if (user) {
+    } else {
+        if (location.pathname === "../htmlPages/profile.html") {
+            location.pathname = "../htmlPages/signup.html";
+        }
+    }
+});
+
 const para1Btn = document.getElementById("para1Btn");
 const showPara1 = () => {
     let para1 = document.getElementById("para1");

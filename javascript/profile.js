@@ -12,6 +12,7 @@ import {
     doc,
     setDoc,
     db,
+    getDoc,
     onSnapshot,
 } from "../firebase.js";
 
@@ -44,8 +45,8 @@ onAuthStateChanged(auth, async (user) => {
         } else {
             userStatus.innerHTML = `Congratulations! you are verified user.`;
         }
-        console.log("User login hy--->", user);
         await picUpdate(uid);
+        await userName(uid);
     } else {
         if (location.pathname === "/htmlPages/profile.html") {
             location.pathname = "/htmlPages/signup.html";
@@ -54,12 +55,16 @@ onAuthStateChanged(auth, async (user) => {
 });
 
 //Getting User Name
-const userName = () => {
+const userName = async (uid) => {
     let userName = document.getElementById("userName");
-    var localStorageData = JSON.parse(localStorage.getItem("userData"));
-    userName.innerHTML = "Hy! " + localStorageData.name;
+    const docRef = doc(db, `usersData/${uid}`);
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+        let { name } = docSnap.data()
+        userName.innerHTML = `Hy ${name}`;
+    } else {
+    }
 }
-userName();
 
 //Select Show Pic
 let file;
@@ -175,14 +180,20 @@ const logout = () => {
 const logoutBtn = document.getElementById("logoutBtn");
 logoutBtn.addEventListener("click", logout);
 
-//Privacy Email
-const privacyProfile = () => {
+//Privacy Password
+const privacyProfile = async () => {
     let oldEmail = document.getElementById("oldEmail");
     let oldPassword = document.getElementById("oldPassword");
     const user = auth.currentUser;
+    const uid = user.uid;
     oldEmail.value = user.email;
-    var localStorageData = JSON.parse(localStorage.getItem("userData"));
-    oldPassword.value = localStorageData.password;
+    const docRef = doc(db, `usersData/${uid}`);
+    const docSnap = await getDoc(docRef);
+    if (docSnap.exists()) {
+        let { password } = docSnap.data()
+        oldPassword.value = password;
+    } else {
+    }
 
 }
 const privacySettingsBtn = document.getElementById("privacySettingsBtn");
@@ -229,7 +240,6 @@ const editPassword = async () => {
 }
 const updatePasswordBtn = document.getElementById("updatePasswordBtn");
 updatePasswordBtn.addEventListener("click", editPassword);
-
 
 //Theme Toggler Js
 function toggleDarkMode() {
