@@ -334,3 +334,9 @@ a {
 #scroll-to-top-btn svg {
     transform: translateY(-4px);
 }
+
+svg.socialMedia {
+    color: white;
+    width: 30px !important;
+    height: 30px !important;
+}
