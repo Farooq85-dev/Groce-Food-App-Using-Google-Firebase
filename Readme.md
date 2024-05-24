@@ -9,8 +9,6 @@ will attract to your app or website is due to:-
 2) Good User Experience
 3) User friendly
 4) Day to day improverments
-5) Keep in mind your audience
 6) Multi Support (MS) on different devices
-7) Manage feedback system
 
 ## Currently In Progress
