@@ -53,6 +53,11 @@ body {
     background: #eaeef6;
 }
 
+img{
+    object-fit: cover;
+    object-position: center;
+}
+
 .navbar {
     position: fixed;
     top: $spacer;
