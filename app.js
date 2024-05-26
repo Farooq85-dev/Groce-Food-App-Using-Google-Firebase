@@ -168,11 +168,8 @@ const whatsappNo = () => {
     const whastsappNo = document.getElementById("whastsappNo");
     whastsappNo.value = number;
 }
-
 const whatsapp = document.getElementById("whatsapp");
 whatsapp.addEventListener("click", whatsappNo);
-
-
 
 //Scrolling Effect
 document.addEventListener("DOMContentLoaded", function () {
