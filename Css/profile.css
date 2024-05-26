@@ -26,6 +26,13 @@ body {
   background: #eaeef6;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 .navbar {
   position: fixed;
   top: 1rem;

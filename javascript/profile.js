@@ -48,8 +48,10 @@ onAuthStateChanged(auth, async (user) => {
         await picUpdate(uid);
         await userName(uid);
     } else {
-        if (location.pathname === "/htmlPages/profile.html") {
-            location.pathname = "/htmlPages/signup.html";
+        let pathArr = location.pathname.split("/")
+        let path = `/${pathArr[pathArr.length - 2]}/${pathArr[pathArr.length - 1]}`
+        if (path === "/htmlPages/profile.html") {
+            location.pathname = location.pathname.replace("/htmlPages/profile.html", "/htmlPages/signup.html");
         }
     }
 });
@@ -147,10 +149,13 @@ cancelUploadBtn.addEventListener("click", cancelUpload);
 // Picture Update
 const picUpdate = async (uid) => {
     await onSnapshot(doc(db, `usersImages/${uid}`), (doc) => {
-        let { userImageUrl } = doc.data();
-        userPhotoUpload.src = userImageUrl;
-        toastr.success("Please wait. Your Picture has been updating.");
-        fileSelectBtn.style.display = "block";
+        let data = doc.data()
+        if (data) {
+            let { userImageUrl } = data;
+            userPhotoUpload.src = userImageUrl;
+            toastr.success("Please wait. Your Picture has been updating.");
+            fileSelectBtn.style.display = "block";
+        }
     });
 }
 
