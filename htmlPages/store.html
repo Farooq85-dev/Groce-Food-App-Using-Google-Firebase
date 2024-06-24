@@ -39,8 +39,12 @@
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0 navUl">
                 </ul>
                 <form class="d-flex headerBtn" role="search">
-                    <a href="../htmlPages/cart.html" class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="30"
-                            height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    <div id="cartIcon" data-bs-toggle="modal" data-bs-target="#checkoutModal" style="cursor:pointer; position: relative; margin-right: 10px;" >
+                        <div class="" id="cartLength" >
+                        0
+                        </div>
+                        <a  class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                            height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round"
                             class="icon icon-tabler icons-tabler-outline icon-tabler-shopping-cart-check">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
@@ -49,8 +53,9 @@
                             <path d="M6 5l14 1l-1 7h-13" />
                             <path d="M15 19l2 2l4 -4" />
                         </svg></a>
-                    <button class="btn me-2 signupBtn"><a href="../htmlPages/signup.html">Signup</a></button>
-                    <button class="btn "><a href="../htmlPages/profile.html">Dashboard</a></button>
+                    </div>
+                        <button class="btn me-2 signupBtn"><a href="../htmlPages/signup.html">Signup</a></button>
+                    <button class="btn"><a href="../htmlPages/profile.html">Dashboard</a></button>
                 </form>
             </div>
         </div>
@@ -144,100 +149,8 @@
     <!-- Cards Products -->
     <div class="container">
         <h1 class="text-center">Our Products</h1>
-        <div class="row pb-3">
-            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
-                <div class="card1">
-                    <img src="../images/card-1.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Tasty Noodles</h5>
-                        <p class="card-text">Noodles are a type of food made from unleavened dough which is either
-                            rolled flat and cut, stretched, or extruded, into long strips or strings.</p>
-                        <a href="#" class="cardsBtn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
-                <div class="card2">
-                    <img src="../images/card-2.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger with Soos</h5>
-                        <p class="card-text">A hamburger, also called a burger, is a dish consisting of fillings—usually
-                            a patty of ground meat, typically beef—placed inside a sliced bun or bread roll.</p>
-                        <a href="#" class="cardsBtn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
-                <div class="card3">
-                    <img src="../images/card-3.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Glass Noodles</h5>
-                        <p class="card-text">Cellophane noodles, or fensi, sometimes called glass noodles, are a type of
-                            transparent noodle made from starch and water. A stabilizer such as chitosan may also be
-                            used.</p>
-                        <a href="#" class="cardsBtn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
-                <div class="card4">
-                    <img src="../images/card-4.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Burger with Cream</h5>
-                        <p class="card-text">This burger combines juicy beef patties with a rich, flavorful cream sauce
-                            that adds a delicious twist to your regular burger. twist to your regular burger.</p>
-                        <a href="#" class="cardsBtn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row pb-3">
-            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
-                <div class="card5">
-                    <img src="../images/card-5.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Finger Chips</h5>
-                        <p class="card-text">A potato chip or crisp is a thin slice of potato that has been deep fried,
-                            baked, or air fried until crunchy. They are commonly served as a snack, side dish, or
-                            appetizer.</p>
-                        <a href="#" class="cardsBtn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
-                <div class="card6">
-                    <img src="../images/card-6.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Ketchup Burger</h5>
-                        <p class="card-text">Ketchup Premium Burger Bar was found by people, just like you, who LOVE
-                            burgers. When we opened our doors, we had one goal in mind: Fair prices, fresh.</p>
-                        <a href="#" class="cardsBtn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
-                <div class="card7">
-                    <img src="../images/card-7.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Circle Chips</h5>
-                        <p class="card-text">we recommend using a maincrop floury potato, like a Maris Piper, which will
-                            give you a fluffy inside and crisp outer coating. They will absorb the oil when fried to
-                            give.</p>
-                        <a href="#" class="cardsBtn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-lg-6 col-xl-3 col-xxl-3">
-                <div class="card8">
-                    <img src="../images/card-8.jpg" style="border-radius: 5px;" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Tasty Pizza title</h5>
-                        <p class="card-text">Pizza is a traditional Italian dish typically consisting of a flat base of
-                            leavened wheat-based dough topped with tomato, cheese, and other ingredients.</p>
-                        <a href="#" class="cardsBtn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
+        <div class="row pb-3 " id="productsAppended">
+            <!-- Products will be here -->
         </div>
     </div>
 
@@ -287,6 +200,27 @@
         </div>
     </div>
 
+
+    <!-- Modal for chechkout and place order -->
+  <div class="modal fade" id="checkoutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Checkout & Place Order</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalBody">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn checkoutModalCloseBtn" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn checkoutModalSaveBtn" >Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    
     <!-- Custom Js -->
     <script src="../javascript/store.js"></script>
 </body>
