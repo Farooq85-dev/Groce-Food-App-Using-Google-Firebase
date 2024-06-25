@@ -67,12 +67,14 @@
     margin-bottom: 10px;
     margin-top: 10px;
   }
+
   #cartLength {
     margin-right: 0px;
   }
 
-  .storeBtn {
-    margin: 10px 0px;
+  .storeBtn,
+  .signupBtn {
+    margin-right: 0px !important;
   }
 }
 

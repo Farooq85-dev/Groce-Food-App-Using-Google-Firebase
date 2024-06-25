@@ -317,3 +317,31 @@ svg.socialMedia {
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
+
+#placeOrderFields {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.receiverEmail,
+.receiverPhoneNumber,
+.recieverName {
+  width: 100%;
+}
+
+#receiverName,
+#receiverEmail,
+#receiverPhoneNumber,
+#receiverAddress {
+  background-color: var(--inputBg);
+  outline: none;
+  border-radius: var(--inputRadius);
+  border: none;
+  padding: var(---inputPadding);
+  margin: 8px 0px;
+  font-weight: var(--fontweight);
+  width: 100%;
+}
