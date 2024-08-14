@@ -1,6 +1,6 @@
 # Food App Using Google Firebase
 
-## Hy everyone this is an e-commerce based project on JavaScript and Firebase as backend. I have implemented various functionalities. This is a comprehensive project for me as a developers. Explore this prjetc and give me suggestions to improve.
+### Hy everyone this is an e-commerce based project on JavaScript and Firebase as backend. I have implemented various functionalities. This is a comprehensive project for me as a developer. Explore this prjetc.Give me suggestions, how can i improve?.
 
 ### Some features are:-
 
